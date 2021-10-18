@@ -11,9 +11,9 @@ export const clip = new MotorCortex.HTMLClip({
           <div class="heading"> {{ initParams.brandName }}</div>
           <a class="url" target="_blank" href="https://{{ initParams.url }}"> {{ initParams.url }}</a>
           <div class="fist-slide-line"></div>
-        </div> 
-        <div class="fist-slide-image-two"></div>
-        <div class="fist-slide-image-one"></div>
+        </div>
+        <img class="fist-slide-image-two" src="{{initParams.firstSlideImageTwo}}">
+        <img class="fist-slide-image-one" src="{{initParams.firstSlideImageOne}}">
       </div>
       <div class="transition">
         <div class="svg-wrapper">
@@ -32,9 +32,9 @@ export const clip = new MotorCortex.HTMLClip({
           <div class="best-products-slogan h3">{{ initParams.bestProductsSlogan }}</div>
         </div>
         <div class="best-products-images">
-          <div class="best-products-image1"></div>
-          <div class="best-products-image2"></div>
-          <div class="best-products-image3"></div>
+          <img class="best-products-image1" src="{{initParams.bestProductImages[0]}}">
+          <img class="best-products-image2" src="{{initParams.bestProductImages[1]}}">
+          <img class="best-products-image3" src="{{initParams.bestProductImages[2]}}">  
         </div>
       </div>
       <div class="op">
@@ -57,9 +57,9 @@ export const clip = new MotorCortex.HTMLClip({
           <img class="fd-image1" src="{{initParams.fdImages[0]}}">
           <div class="fd-images-holder">
             <img class="fd-image2" src="{{initParams.fdImages[1]}}">
-            <img class="fd-image3" src="{{initParams.fdImages[1]}}">
-            <img class="fd-image4" src="{{initParams.fdImages[2]}}">
-            <img class="fd-image5" src="{{initParams.fdImages[3]}}">
+            <img class="fd-image3" src="{{initParams.fdImages[2]}}">
+            <img class="fd-image4" src="{{initParams.fdImages[3]}}">
+            <img class="fd-image5" src="{{initParams.fdImages[4]}}">
           </div>        
         </div>
       </div>
@@ -176,9 +176,6 @@ export const clip = new MotorCortex.HTMLClip({
   .best-products-image1{
     width:730px;
     height:860px;
-    background: url({{initParams.bestProductImages[0]}});
-    background-repeat: no-repeat;
-    background-size:cover;
     box-shadow: 1px -2px 86px -28px #000000; 
     right: 44px;
     position: absolute;
@@ -187,9 +184,6 @@ export const clip = new MotorCortex.HTMLClip({
   .best-products-image2{
     width:410px;
     height:480px;
-    background: url({{initParams.bestProductImages[1]}});
-    background-repeat: no-repeat;
-    background-size:509px;
     box-shadow: 1px -2px 86px -28px #000000; 
     position: absolute;
     left: 710px;
@@ -199,15 +193,10 @@ export const clip = new MotorCortex.HTMLClip({
   .best-products-image3{
     width:410px;
     height:380px;
-    background: url({{initParams.bestProductImages[2]}});
-    background-repeat: no-repeat;
-    background-size:cover;
     box-shadow: 1px -2px 86px -28px #000000; 
     position: absolute;
     left: 710px;
     top:612px;
-    background-size: 500px;
-    background-position-y: -100px;
   }
   .op,.fd{
     position: absolute;
@@ -355,13 +344,13 @@ export const clip = new MotorCortex.HTMLClip({
       default: "Motorcortexjs",
     },
     firstSlideImageOne:{
-      label: "Brand Name",
+      label: "First slide Image One",
       type: "string",
       optional: false,
       default: "./assets/first-slide1.jpg",
     },
     firstSlideImageTwo:{
-      label: "Brand Name",
+      label: "First slide Image Two",
       type: "string",
       optional: false,
       default: "./assets/first-slide2.jpg",
@@ -391,37 +380,40 @@ export const clip = new MotorCortex.HTMLClip({
       default: "Wide assortment New Collection",
     },
     bestProductImages:{
+      label: "Best Products Images",
       type: "array",
       items: "string",
       default:["./assets/bp1.jpg","./assets/bp2.jpg","./assets/bp3.jpg"]
     },
     opHeading:{
-      label: "Best Products Heading",
+      label: "Online Promotion Heading",
       type: "string",
       optional: false,
     },
     opSlogan:{
-      label: "Online promotions",
+      label: "Online promotions Slogan",
       type: "string",
       optional: false,
       default: "Wide assortment New Collection",
     },
     opImages:{
+      label: "Online promotions Images",
       type: "array",
       items: "string",
     },
     fdHeading:{
-      label: "Best Products Heading",
+      label: "Fast Delivery Heading",
       type: "string",
       fdtional: false,
     },
     fdSlogan:{
-      label: "Online promotions",
+      label: "Fast Delivery Slogan",
       type: "string",
       fdtional: false,
       default: "Wide assortment New Collection",
     },
     fdImages:{
+      label: "Fast Delivery Images",
       type: "array",
       items: "string",
     },
@@ -556,7 +548,7 @@ const transitionTransform = new AnimePlugin.Anime(
     },
     initialValues: {
       transform:{
-        scale:0.01
+        scale:0
       }
     }
   },
@@ -908,7 +900,7 @@ const fdImageOne = new AnimePlugin.Anime(
   },
   {
     selector: ".fd-image1",
-    duration: 2000,
+    duration: 1800,
     easing: "linear"
   }
 );
@@ -923,7 +915,7 @@ const fdImageGrid = new AnimePlugin.Anime(
   },
   {
     selector: ".fd-images-holder",
-    duration: 1500,
+    duration: 1800,
     easing: "linear"
   }
 );
@@ -939,8 +931,24 @@ const fdImageFive = new AnimePlugin.Anime(
   },
   {
     selector: ".fd-image5",
-    duration: 2000,
-    easing: "linear"
+    duration: 1500,
+    easing: "easeOutQuad"
+  }
+);
+
+const fdopacityZero = new AnimePlugin.Anime(
+  {
+    animatedAttrs: {
+      opacity:0
+    },
+    initialValues: {
+      opacity:1
+  }
+  },
+  {
+    selector: ".fd",
+    duration: 400,
+    easing: "easeOutQuad"
   }
 );
 
@@ -974,5 +982,6 @@ clip.addIncident(fdOpacity,7901);
 clip.addIncident(fdBlur,7902);
 clip.addIncident(fdLetterSpacing,7902);
 clip.addIncident(fdImageOne,7902);
-clip.addIncident(fdImageGrid,8402);
+clip.addIncident(fdImageGrid,7902);
 clip.addIncident(fdImageFive,7902);
+clip.addIncident(fdopacityZero,9702);
