@@ -1,0 +1,46 @@
+export default [
+  {
+    name: "Default",
+    value: {
+      color: "white",
+      url:"docs.motorcortexjs.com",
+      brandName:"Motorcortex",
+      textColor: "#121212",
+      firstSlideImageOne:"https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/product-promo/first-slide1.jpg",
+      firstSlideImageTwo:"https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/product-promo/first-slide2.jpg",
+      transitionHeading:"Choose Convenience",
+      transitionSlogan:"Shop with us",
+      bestProductsHeading:"Best Products",
+      bestProductsSlogan:"Wide assortment New Collection",
+      bestProductImages:["https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/product-promo/bp1.jpg","https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/product-promo/bp2.jpg","https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/product-promo/bp3.jpg"],
+      opHeading:"Online Promotions",
+      opSlogan:"Best Prices",
+      opImages:["https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/product-promo/op1.jpg","https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/product-promo/op2.jpg","https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/product-promo/op3.jpg"],
+      fdHeading:"Fast delivery",
+      fdSlogan:"Free from 50$ prurchese",
+      fdImages:["https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/product-promo/fd1.jpg","https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/product-promo/fd2.jpg","https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/product-promo/fd3.jpg","https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/product-promo/fd4.jpg","https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/product-promo/fd5.jpg"]
+    },
+  },
+  {
+    name: "Dark",
+    value: {
+      color: "#121212",
+      url:"docs.motorcortexjs.com",
+      brandName:"Motorcortex",
+      textColor: "#fff",
+      firstSlideImageOne:"https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/product-promo/first-slide1.jpg",
+      firstSlideImageTwo:"https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/product-promo/first-slide2.jpg",
+      transitionHeading:"Choose Convenience",
+      transitionSlogan:"Shop with us",
+      bestProductsHeading:"Best Products",
+      bestProductsSlogan:"Wide assortment New Collection",
+      bestProductImages:["https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/product-promo/bp1.jpg","https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/product-promo/bp2.jpg","https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/product-promo/bp3.jpg"],
+      opHeading:"Online Promotions",
+      opSlogan:"Best Prices",
+      opImages:["https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/product-promo/op1.jpg","https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/product-promo/op2.jpg","https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/product-promo/op3.jpg"],
+      fdHeading:"Online Promotions",
+      fdSlogan:"Free from 50$ prurchese",
+      fdImages:["https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/product-promo/fd1.jpg","https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/product-promo/fd2.jpg","https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/product-promo/fd3.jpg","https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/product-promo/fd4.jpg","https://donkey-spaces.ams3.cdn.digitaloceanspaces.com/assets/product-promo/fd5.jpg"]
+    },
+  },
+];
