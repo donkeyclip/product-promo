@@ -32,7 +32,7 @@
     }
   },
   "dependencies": {
-    "@donkeyclip/motorcortex": "7.5.4",
+    "@donkeyclip/motorcortex": "7.6.6",
     "@donkeyclip/motorcortex-anime": "2.1.16"
   },
   "devDependencies": {
