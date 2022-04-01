@@ -1,9 +1,9 @@
-import MotorCortex from "@donkeyclip/motorcortex";
+import { loadPlugin, HTMLClip, CSSEffect} from "@donkeyclip/motorcortex";
 import AnimePluginDefinition from "@donkeyclip/motorcortex-anime";
 import initParams from "./initParams";
-const AnimePlugin = MotorCortex.loadPlugin(AnimePluginDefinition);
+const AnimePlugin = loadPlugin(AnimePluginDefinition);
 
-export const clip = new MotorCortex.HTMLClip({
+export const clip = new HTMLClip({
   html: `
     <div class="root">
       <div class="fist-slide">
@@ -453,7 +453,7 @@ export const clip = new MotorCortex.HTMLClip({
   ],
 });
 
-const rootBlur = new AnimePlugin.Anime(
+const rootBlur = new CSSEffect(
   {
     animatedAttrs: {
       filter: "blur(0px)",
@@ -469,7 +469,7 @@ const rootBlur = new AnimePlugin.Anime(
   }
 );
 
-const subtitleSpacing = new AnimePlugin.Anime(
+const subtitleSpacing = new CSSEffect(
   {
     animatedAttrs: {
       letterSpacing: "1px",
@@ -484,7 +484,7 @@ const subtitleSpacing = new AnimePlugin.Anime(
     easing: "linear",
   }
 );
-const titleSpacing = new AnimePlugin.Anime(
+const titleSpacing = new CSSEffect(
   {
     animatedAttrs: {
       letterSpacing: "1px",
@@ -500,7 +500,7 @@ const titleSpacing = new AnimePlugin.Anime(
   }
 );
 
-const fistSlideImageTwo = new AnimePlugin.Anime(
+const fistSlideImageTwo = new CSSEffect(
   {
     animatedAttrs: {
       left: "46%",
@@ -516,7 +516,7 @@ const fistSlideImageTwo = new AnimePlugin.Anime(
   }
 );
 
-const fistSlideImageOne = new AnimePlugin.Anime(
+const fistSlideImageOne = new CSSEffect(
   {
     animatedAttrs: {
       bottom: "0%",
@@ -532,7 +532,7 @@ const fistSlideImageOne = new AnimePlugin.Anime(
   }
 );
 
-const fistSlideOpacity = new AnimePlugin.Anime(
+const fistSlideOpacity = new CSSEffect(
   {
     animatedAttrs: {
       opacity: 0,
@@ -547,7 +547,7 @@ const fistSlideOpacity = new AnimePlugin.Anime(
     easing: "linear",
   }
 );
-const svgShapeOne = new AnimePlugin.Anime(
+const svgShapeOne = new CSSEffect(
   {
     animatedAttrs: {
       strokeDashoffset: 0,
@@ -560,7 +560,7 @@ const svgShapeOne = new AnimePlugin.Anime(
   }
 );
 
-const transitionTransform = new AnimePlugin.Anime(
+const transitionTransform = new CSSEffect(
   {
     animatedAttrs: {
       transform: {
@@ -580,7 +580,7 @@ const transitionTransform = new AnimePlugin.Anime(
   }
 );
 
-const transitionLetterSpacing = new AnimePlugin.Anime(
+const transitionLetterSpacing = new CSSEffect(
   {
     animatedAttrs: {
       letterSpacing: "1px",
@@ -595,7 +595,7 @@ const transitionLetterSpacing = new AnimePlugin.Anime(
     easing: "linear",
   }
 );
-const transitionTransformToOne = new AnimePlugin.Anime(
+const transitionTransformToOne = new CSSEffect(
   {
     animatedAttrs: {
       transform: {
@@ -615,7 +615,7 @@ const transitionTransformToOne = new AnimePlugin.Anime(
   }
 );
 
-const transitionOpacity = new AnimePlugin.Anime(
+const transitionOpacity = new CSSEffect(
   {
     animatedAttrs: {
       opacity: 0,
@@ -628,7 +628,7 @@ const transitionOpacity = new AnimePlugin.Anime(
   }
 );
 
-const test = new AnimePlugin.Anime(
+const test = new CSSEffect(
   {
     animatedAttrs: {
       filter: "blur(0px)",
@@ -644,7 +644,7 @@ const test = new AnimePlugin.Anime(
   }
 );
 
-const bestProductOpacity = new AnimePlugin.Anime(
+const bestProductOpacity = new CSSEffect(
   {
     animatedAttrs: {
       opacity: 1,
@@ -660,7 +660,7 @@ const bestProductOpacity = new AnimePlugin.Anime(
   }
 );
 
-const bpOneBgSize = new AnimePlugin.Anime(
+const bpOneBgSize = new CSSEffect(
   {
     animatedAttrs: {
       backgroundSize: "730px",
@@ -678,7 +678,7 @@ const bpOneBgSize = new AnimePlugin.Anime(
   }
 );
 
-const bpTwoBgSize = new AnimePlugin.Anime(
+const bpTwoBgSize = new CSSEffect(
   {
     animatedAttrs: {
       backgroundPositionX: "-100px",
@@ -694,7 +694,7 @@ const bpTwoBgSize = new AnimePlugin.Anime(
   }
 );
 
-const bpThreeBgSize = new AnimePlugin.Anime(
+const bpThreeBgSize = new CSSEffect(
   {
     animatedAttrs: {
       backgroundPositionY: "0px",
@@ -712,7 +712,7 @@ const bpThreeBgSize = new AnimePlugin.Anime(
   }
 );
 
-const bestProductsTextSpacing = new AnimePlugin.Anime(
+const bestProductsTextSpacing = new CSSEffect(
   {
     animatedAttrs: {
       letterSpacing: "1px",
@@ -728,7 +728,7 @@ const bestProductsTextSpacing = new AnimePlugin.Anime(
   }
 );
 
-const bestProductOpacityZero = new AnimePlugin.Anime(
+const bestProductOpacityZero = new CSSEffect(
   {
     animatedAttrs: {
       opacity: 0,
@@ -746,7 +746,7 @@ const bestProductOpacityZero = new AnimePlugin.Anime(
   }
 );
 
-const opOpacity = new AnimePlugin.Anime(
+const opOpacity = new CSSEffect(
   {
     animatedAttrs: {
       opacity: 1,
@@ -763,7 +763,7 @@ const opOpacity = new AnimePlugin.Anime(
     easing: "linear",
   }
 );
-const rootOp = new AnimePlugin.Anime(
+const rootOp = new CSSEffect(
   {
     animatedAttrs: {
       filter: "blur(0px)",
@@ -779,7 +779,7 @@ const rootOp = new AnimePlugin.Anime(
   }
 );
 
-const opTextSpacing = new AnimePlugin.Anime(
+const opTextSpacing = new CSSEffect(
   {
     animatedAttrs: {
       letterSpacing: "1px",
@@ -795,7 +795,7 @@ const opTextSpacing = new AnimePlugin.Anime(
   }
 );
 
-const opImageOne = new AnimePlugin.Anime(
+const opImageOne = new CSSEffect(
   {
     animatedAttrs: {
       right: "100px",
@@ -811,7 +811,7 @@ const opImageOne = new AnimePlugin.Anime(
   }
 );
 
-const opImageTwo = new AnimePlugin.Anime(
+const opImageTwo = new CSSEffect(
   {
     animatedAttrs: {
       top: "150px",
@@ -827,7 +827,7 @@ const opImageTwo = new AnimePlugin.Anime(
   }
 );
 
-const opImageThree = new AnimePlugin.Anime(
+const opImageThree = new CSSEffect(
   {
     animatedAttrs: {
       top: "40px",
@@ -843,7 +843,7 @@ const opImageThree = new AnimePlugin.Anime(
   }
 );
 
-const opOpacityZero = new AnimePlugin.Anime(
+const opOpacityZero = new CSSEffect(
   {
     animatedAttrs: {
       opacity: 0,
@@ -859,7 +859,7 @@ const opOpacityZero = new AnimePlugin.Anime(
   }
 );
 
-const fdOpacity = new AnimePlugin.Anime(
+const fdOpacity = new CSSEffect(
   {
     animatedAttrs: {
       opacity: 1,
@@ -875,7 +875,7 @@ const fdOpacity = new AnimePlugin.Anime(
   }
 );
 
-const fdBlur = new AnimePlugin.Anime(
+const fdBlur = new CSSEffect(
   {
     animatedAttrs: {
       filter: "blur(0px)",
@@ -891,7 +891,7 @@ const fdBlur = new AnimePlugin.Anime(
   }
 );
 
-const fdLetterSpacing = new AnimePlugin.Anime(
+const fdLetterSpacing = new CSSEffect(
   {
     animatedAttrs: {
       letterSpacing: "3px",
@@ -907,7 +907,7 @@ const fdLetterSpacing = new AnimePlugin.Anime(
   }
 );
 
-const fdImageOne = new AnimePlugin.Anime(
+const fdImageOne = new CSSEffect(
   {
     animatedAttrs: {
       left: "140px",
@@ -922,7 +922,7 @@ const fdImageOne = new AnimePlugin.Anime(
     easing: "linear",
   }
 );
-const fdImageGrid = new AnimePlugin.Anime(
+const fdImageGrid = new CSSEffect(
   {
     animatedAttrs: {
       left: "1080px",
@@ -938,7 +938,7 @@ const fdImageGrid = new AnimePlugin.Anime(
   }
 );
 
-const fdImageFive = new AnimePlugin.Anime(
+const fdImageFive = new CSSEffect(
   {
     animatedAttrs: {
       left: "386px",
@@ -954,7 +954,7 @@ const fdImageFive = new AnimePlugin.Anime(
   }
 );
 
-const fdopacityZero = new AnimePlugin.Anime(
+const fdopacityZero = new CSSEffect(
   {
     animatedAttrs: {
       opacity: 0,
