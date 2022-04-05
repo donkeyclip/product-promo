@@ -12,8 +12,8 @@ export const clip = new HTMLClip({
           <a class="url" target="_blank" href="https://{{ initParams.url }}"> {{ initParams.url }}</a>
           <div class="fist-slide-line"></div>
         </div>
-        <div class="fist-slide-image-two" src="{{initParams.firstSlideImageTwo}}"></div>
-        <div class="fist-slide-image-one" src="{{initParams.firstSlideImageOne}}"></div>
+        <div class="fist-slide-image-two"></div>
+        <div class="fist-slide-image-one"></div>
       </div>
       <div class="transition">
         <div class="svg-wrapper">
@@ -32,9 +32,9 @@ export const clip = new HTMLClip({
           <div class="best-products-slogan h3">{{ initParams.bestProductsSlogan }}</div>
         </div>
         <div class="best-products-images">
-          <div class="best-products-image1" ></div>
-          <div class="best-products-image2" ></div>
-          <div class="best-products-image3" >  </div>
+          <div class="best-products-image1"></div>
+          <div class="best-products-image2"></div>
+          <div class="best-products-image3"></div>
         </div>
       </div>
       <div class="op">
@@ -43,9 +43,9 @@ export const clip = new HTMLClip({
           <div class="op-slogan h3">{{ initParams.opSlogan }}</div>
         </div>
         <div class="op-images">
-          <div class="op-image1" src="{{initParams.opImages[0]}}"></div>
-          <div class="op-image2" src="{{initParams.opImages[1]}}"></div>
-          <div class="op-image3" src="{{initParams.opImages[2]}}"></div>
+          <div class="op-image1"></div>
+          <div class="op-image2"></div>
+          <div class="op-image3"></div>
         </div>
       </div>
       <div class="fd">
@@ -56,10 +56,10 @@ export const clip = new HTMLClip({
         <div class="fd-images">
           <div class="fd-image1" src="{{initParams.fdImages[0]}}">
           <div class="fd-images-holder">
-            <div class="fd-image2" src="{{initParams.fdImages[1]}}"> </div>
-            <div class="fd-image3" src="{{initParams.fdImages[2]}}"> </div>
-            <div class="fd-image4" src="{{initParams.fdImages[3]}}"> </div>
-            <div class="fd-image5" src="{{initParams.fdImages[4]}}"> </div>
+            <div class="fd-image2"></div>
+            <div class="fd-image3"></div>
+            <div class="fd-image4"></div>
+            <div class="fd-image5"></div>
           </div>        
         </div>
       </div>
