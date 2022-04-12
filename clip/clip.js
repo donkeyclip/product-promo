@@ -136,10 +136,10 @@ export const clip = new HTMLClip({
 
   .shape1{
     stroke-dasharray: 3443;
-    stroke-width: 10px;
+    stroke-width: 40px;
     fill: transparent;
     stroke: {{initParams.textColor}};
-    border-bottom: 5px solid black;
+    border-bottom: 10px solid black;
     stroke-dashoffset: -3443;
   }
   .transition-text,.best-products-text{
@@ -564,7 +564,7 @@ const transitionTransform = new CSSEffect(
   {
     animatedAttrs: {
       transform: {
-        scale: 0.8,
+        scale: .7,
       },
     },
     initialValues: {
@@ -604,7 +604,7 @@ const transitionTransformToOne = new CSSEffect(
     },
     initialValues: {
       transform: {
-        scale: 0.8,
+        scale: 0.7,
       },
     },
   },
@@ -681,10 +681,10 @@ const bpOneBgSize = new CSSEffect(
 const bpTwoBgSize = new CSSEffect(
   {
     animatedAttrs: {
-      backgroundPositionX: "-100px",
+      backgroundPositionY: "-10px",
     },
     initialValues: {
-      backgroundPositionX: "0px",
+      backgroundPositionY: "0px",
     },
   },
   {
@@ -970,7 +970,7 @@ const fdopacityZero = new CSSEffect(
   }
 );
 
-// clip.addIncident(rootBlur, 0);
+clip.addIncident(rootBlur, 0);
 clip.addIncident(subtitleSpacing, 200);
 clip.addIncident(titleSpacing, 200);
 clip.addIncident(fistSlideImageTwo, 200);
@@ -981,22 +981,22 @@ clip.addIncident(transitionTransform, 1400);
 clip.addIncident(transitionLetterSpacing, 1800);
 clip.addIncident(transitionTransformToOne, 2200);
 clip.addIncident(transitionOpacity, 3400);
-// clip.addIncident(test, 3400);
+clip.addIncident(test, 3400);
 clip.addIncident(bestProductOpacity, 3400);
 clip.addIncident(bpOneBgSize, 3400);
-clip.addIncident(bpTwoBgSize, 3400);
+// clip.addIncident(bpTwoBgSize, 3400);
 clip.addIncident(bpThreeBgSize, 3400);
 clip.addIncident(bestProductsTextSpacing, 3400);
 clip.addIncident(bestProductOpacityZero, 5900);
 clip.addIncident(opOpacity, 5900);
-// clip.addIncident(rootOp, 5901);
+clip.addIncident(rootOp, 5901);
 clip.addIncident(opTextSpacing, 5901);
 clip.addIncident(opImageOne, 5901);
 clip.addIncident(opImageTwo, 5901);
 clip.addIncident(opImageThree, 5901);
 clip.addIncident(opOpacityZero, 7901);
 clip.addIncident(fdOpacity, 7901);
-// clip.addIncident(fdBlur, 7902);
+clip.addIncident(fdBlur, 7902);
 clip.addIncident(fdLetterSpacing, 7902);
 clip.addIncident(fdImageOne, 7902);
 clip.addIncident(fdImageGrid, 7902);
