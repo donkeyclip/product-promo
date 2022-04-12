@@ -1,7 +1,7 @@
 import { loadPlugin, HTMLClip, CSSEffect} from "@donkeyclip/motorcortex";
 import AnimePluginDefinition from "@donkeyclip/motorcortex-anime";
 import initParams from "./initParams";
-const AnimePlugin = loadPlugin(AnimePluginDefinition);
+// const AnimePlugin = loadPlugin(AnimePluginDefinition);
 
 export const clip = new HTMLClip({
   html: `
@@ -970,7 +970,7 @@ const fdopacityZero = new CSSEffect(
   }
 );
 
-clip.addIncident(rootBlur, 0);
+// clip.addIncident(rootBlur, 0);
 clip.addIncident(subtitleSpacing, 200);
 clip.addIncident(titleSpacing, 200);
 clip.addIncident(fistSlideImageTwo, 200);
@@ -981,7 +981,7 @@ clip.addIncident(transitionTransform, 1400);
 clip.addIncident(transitionLetterSpacing, 1800);
 clip.addIncident(transitionTransformToOne, 2200);
 clip.addIncident(transitionOpacity, 3400);
-clip.addIncident(test, 3400);
+// clip.addIncident(test, 3400);
 clip.addIncident(bestProductOpacity, 3400);
 clip.addIncident(bpOneBgSize, 3400);
 clip.addIncident(bpTwoBgSize, 3400);
@@ -989,14 +989,14 @@ clip.addIncident(bpThreeBgSize, 3400);
 clip.addIncident(bestProductsTextSpacing, 3400);
 clip.addIncident(bestProductOpacityZero, 5900);
 clip.addIncident(opOpacity, 5900);
-clip.addIncident(rootOp, 5901);
+// clip.addIncident(rootOp, 5901);
 clip.addIncident(opTextSpacing, 5901);
 clip.addIncident(opImageOne, 5901);
 clip.addIncident(opImageTwo, 5901);
 clip.addIncident(opImageThree, 5901);
 clip.addIncident(opOpacityZero, 7901);
 clip.addIncident(fdOpacity, 7901);
-clip.addIncident(fdBlur, 7902);
+// clip.addIncident(fdBlur, 7902);
 clip.addIncident(fdLetterSpacing, 7902);
 clip.addIncident(fdImageOne, 7902);
 clip.addIncident(fdImageGrid, 7902);
