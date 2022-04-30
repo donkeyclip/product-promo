@@ -41,6 +41,7 @@
     "@babel/plugin-transform-react-jsx": "^7.17.3",
     "@babel/preset-env": "^7.16.11",
     "@donkeyclip/motorcortex-player": "^2.6.1",
+    "@donkeyclip/video-renderer": "1.4.2",
     "babel-eslint": "10.1.0",
     "babel-loader": "^8.2.4",
     "base-64": "1.0.0",
