@@ -32,7 +32,7 @@
     }
   },
   "dependencies": {
-    "@donkeyclip/motorcortex": "^9.0.0",
+    "@donkeyclip/motorcortex": "^9.1.3",
     "@donkeyclip/motorcortex-anime": "^3.1.0"
   },
   "devDependencies": {
@@ -40,7 +40,7 @@
     "@babel/plugin-syntax-jsx": "^7.16.7",
     "@babel/plugin-transform-react-jsx": "^7.17.3",
     "@babel/preset-env": "^7.16.11",
-    "@donkeyclip/motorcortex-player": "^2.6.1",
+    "@donkeyclip/motorcortex-player": "^2.6.6",
     "@donkeyclip/video-renderer": "1.4.2",
     "babel-eslint": "10.1.0",
     "babel-loader": "^8.2.4",
