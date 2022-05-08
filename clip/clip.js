@@ -1,7 +1,6 @@
-import { loadPlugin, HTMLClip, CSSEffect} from "@donkeyclip/motorcortex";
-import AnimePluginDefinition from "@donkeyclip/motorcortex-anime";
+import { HTMLClip, CSSEffect} from "@donkeyclip/motorcortex";
 import initParams from "./initParams";
-// const AnimePlugin = loadPlugin(AnimePluginDefinition);
+import initParamsValidationRules from "./initParamsValidationRules";
 
 export const clip = new HTMLClip({
   html: `
@@ -344,106 +343,7 @@ export const clip = new HTMLClip({
     width: "1920px",
     height: "1080px",
   },
-  initParamsValidationRules: {
-    color: {
-      label: "Bg Color",
-      type: "color",
-      optional: true,
-      default: "white",
-    },
-    textColor: {
-      label: "Text Color",
-      type: "color",
-      optional: true,
-      default: "#121212",
-    },
-    url: {
-      label: "url",
-      type: "string",
-      optional: false,
-      default: "motorcortexjs.com",
-    },
-    brandName: {
-      label: "Brand Name",
-      type: "string",
-      optional: false,
-      default: "Motorcortexjs",
-    },
-    firstSlideImageOne: {
-      label: "First slide Image One",
-      type: "string",
-      optional: false,
-      default: "./assets/first-slide1.jpg",
-    },
-    firstSlideImageTwo: {
-      label: "First slide Image Two",
-      type: "string",
-      optional: false,
-      default: "./assets/first-slide2.jpg",
-    },
-    transitionHeading: {
-      label: "Transition Heading",
-      type: "string",
-      optional: false,
-      default: "Choose Convenience",
-    },
-    transitionSlogan: {
-      label: "Transition Slogan",
-      type: "string",
-      optional: false,
-      default: "Shop with us",
-    },
-    bestProductsHeading: {
-      label: "Best Products Heading",
-      type: "string",
-      optional: false,
-      default: "Best Products",
-    },
-    bestProductsSlogan: {
-      label: "Best Products Slogan",
-      type: "string",
-      optional: false,
-      default: "Wide assortment New Collection",
-    },
-    bestProductImages: {
-      label: "Best Products Images",
-      type: "array",
-      items: "string",
-      default: ["./assets/bp1.jpg", "./assets/bp2.jpg", "./assets/bp3.jpg"],
-    },
-    opHeading: {
-      label: "Online Promotion Heading",
-      type: "string",
-      optional: false,
-    },
-    opSlogan: {
-      label: "Online promotions Slogan",
-      type: "string",
-      optional: false,
-      default: "Wide assortment New Collection",
-    },
-    opImages: {
-      label: "Online promotions Images",
-      type: "array",
-      items: "string",
-    },
-    fdHeading: {
-      label: "Fast Delivery Heading",
-      type: "string",
-      fdtional: false,
-    },
-    fdSlogan: {
-      label: "Fast Delivery Slogan",
-      type: "string",
-      fdtional: false,
-      default: "Wide assortment New Collection",
-    },
-    fdImages: {
-      label: "Fast Delivery Images",
-      type: "array",
-      items: "string",
-    },
-  },
+  initParamsValidationRules,
   initParams: initParams[0].value,
   fonts: [
     {
