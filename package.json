@@ -42,7 +42,7 @@
     "@babel/preset-env": "7.18.2",
     "@donkeyclip/motorcortex-player": "^2.6.6",
     "@donkeyclip/video-renderer": "1.4.2",
-    "babel-eslint": "10.1.0",
+    "@babel/eslint-parser": "7.11.0",
     "babel-loader": "^8.2.4",
     "base-64": "1.0.0",
     "concurrently": "^7.1.0",
