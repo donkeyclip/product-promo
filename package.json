@@ -36,10 +36,10 @@
     "@donkeyclip/motorcortex-anime": "^3.1.0"
   },
   "devDependencies": {
-    "@babel/core": "7.18.2",
-    "@babel/plugin-syntax-jsx": "7.17.12",
-    "@babel/plugin-transform-react-jsx": "7.17.12",
-    "@babel/preset-env": "7.18.2",
+    "@babel/core": "7.25.9",
+    "@babel/plugin-syntax-jsx": "7.25.9",
+    "@babel/plugin-transform-react-jsx": "7.25.9",
+    "@babel/preset-env": "7.25.9",
     "@donkeyclip/motorcortex-player": "^2.6.6",
     "@donkeyclip/video-renderer": "1.4.2",
     "babel-eslint": "10.1.0",
