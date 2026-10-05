@@ -37,9 +37,9 @@
   },
   "devDependencies": {
     "@babel/core": "7.18.2",
-    "@babel/plugin-syntax-jsx": "7.17.12",
-    "@babel/plugin-transform-react-jsx": "7.17.12",
-    "@babel/preset-env": "7.18.2",
+    "@babel/plugin-syntax-jsx": "7.29.7",
+    "@babel/plugin-transform-react-jsx": "7.29.7",
+    "@babel/preset-env": "7.29.7",
     "@donkeyclip/motorcortex-player": "^2.6.6",
     "@donkeyclip/video-renderer": "1.4.2",
     "babel-eslint": "10.1.0",
